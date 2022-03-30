@@ -15,7 +15,7 @@ namespace BusinessLogic.Commands
             entity.ID = int.Parse(data.fields["CodigoSocio"]);
 
             Member member = new MemberRepository().GetMember(entity.ID);
-            
+
             view.ShowResult(member.FirstName + " " + member.SecondName);
         }
     }

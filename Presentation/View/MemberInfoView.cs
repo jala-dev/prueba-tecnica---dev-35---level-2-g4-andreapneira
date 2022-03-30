@@ -22,7 +22,15 @@ namespace Presentation.View
 
         public void ShowResult(string fullName)
         {
-            Console.WriteLine("R. El Id corresponde al socio: {0}", fullName);
+            if (fullName == "no no")
+            {
+                Console.WriteLine("el codigo ingresado no existe en el sistema");
+            }
+            else
+            {
+                Console.WriteLine("R. El Id corresponde al socio: {0}", fullName);
+            }
+            
             Console.WriteLine("======================================");
         }
     }
