@@ -21,7 +21,10 @@ namespace BusinessLogic.Commands
 
             double total = this.CalculateTotalReceivable(memberConsumptions);
 
-            view.ShowResult(total);            
+            //InputData dato = new SaveConsumptionView().RequestData();
+            int dato = 5;
+
+            view.ShowResult(entity.ID, dato, total); //edited.           
         }
 
         private double CalculateTotalReceivable(List<Consumption> memberConsumptions)
